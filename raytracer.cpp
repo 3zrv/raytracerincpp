@@ -1,6 +1,6 @@
 /*
 Compilation instructions (requires Borland C++ 3.1 or 4.52):
-bcc -w -d -O2 -f287 -3 -ms -L\bc31\lib -I\bc31\include trace.cpp
+bcc -w -d -O2 -f287 -3 -ms -L\bc31\lib -I\bc31\include raytracer.cpp
 */
 
 #include <stdio.h>
@@ -52,7 +52,6 @@ struct XYZ
     }
     void ClampWithDesaturation()
     {
-        //¢£õö¶·ü ×‡Óƒ ˜™Øˆ Ð€ õöùúÐ€üõö ¢© ®¯
         // If the color represented by this triplet
         // is too bright or too dim, decrease the
         // saturation as much as required, while keeping
